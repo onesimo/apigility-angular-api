@@ -14,7 +14,13 @@ class ClientesResource extends AbstractResourceListener
      */
     public function create($data)
     {
-        return new ApiProblem(405, 'The POST method has not been defined');
+        $cliente = new ClientesEntity();
+        $cliente->id = $data->id;
+        $cliente->name = $data->name;
+        $cliente->email = $data->email;
+        
+        return $cliente;
+        //return new ApiProblem(405, 'The POST method has not been defined');
     }
 
     /**
