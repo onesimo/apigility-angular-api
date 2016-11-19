@@ -29,6 +29,7 @@ return [
             'service_name' => 'Sum',
             'http_methods' => [
                 0 => 'GET',
+                1 => 'POST',
             ],
             'route_name' => 'son-api.rpc.sum',
         ],
